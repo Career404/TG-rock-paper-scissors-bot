@@ -1,0 +1,22 @@
+{
+  "name": "tgbasic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "bot": "cd dist && node bot.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.11.19",
+    "@types/node-fetch": "^2.6.2",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "grammy": "^1.14.1"
+  }
+}
