@@ -28,10 +28,10 @@ const helpers = {
 bot.command('bot', (ctx) => {
     ctx.reply('Bot-paper-scissors - go!', { reply_markup: keyboard });
 });
-bot.hears(/^(🗿|📃|✂️)$/, (ctx) => {
+bot.hears(/^(🗿|📃|✂️)$/, async (ctx) => {
     const newMatchResult = BotMatch(helpers.emojiToText(ctx.msg.text));
-    ctx.reply(helpers.textToEmoji(newMatchResult[1]));
-    ctx.reply(newMatchResult[0]);
+    await ctx.reply(helpers.textToEmoji(newMatchResult[1]));
+    await ctx.reply(newMatchResult[0]);
 });
 bot.start();
 //# sourceMappingURL=bot.js.map
